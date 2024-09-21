@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: $main-gray;
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: $main-gray;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: inline-block;
+  background: none;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
