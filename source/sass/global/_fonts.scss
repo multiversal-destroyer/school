@@ -1,27 +1,33 @@
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
   font-display: swap;
-  src: url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype"),
+  url("../fonts/Inter-VariableFont_opsz,wght.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Montserrat";
   font-style: normal;
-  font-weight: 700;
   font-display: swap;
-  src: url("../fonts/opensansbold.woff2") format("woff2"),
-    url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype"),
+  url("../fonts/Montserrat-VariableFont_wght.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Poppins";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 500;
   font-display: swap;
-  src: url("../fonts/opensanslight.woff2") format("woff2"),
-    url("../fonts/opensanslight.woff") format("woff");
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype"),
+  url("../fonts/Poppins-Medium.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype"),
+  url("../fonts/Poppins-SemiBold.woff") format("woff");
+}

@@ -3,6 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -10,22 +11,32 @@ html {
 }
 
 body {
-  font-family: "Open Sans";
-  font-size: 18px;
-  color: $main-gray;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 17px;
+  color: $black;
   min-height: 100%;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.main {
+  position: relative;
+  flex-grow: 1;
 }
 
-input::placeholder,
-textarea::placeholder {
-  font-size: 18px;
-  line-height: 30px;
-  color: $main-gray;
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  height: auto;
 }
 
 .visually-hidden {

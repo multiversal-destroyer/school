@@ -1,34 +1,122 @@
 // Colors
 
-$basic-black: #000000;
-$basic-black30: rgba(0, 0, 0, 0.3);
+$black: #000000;
 
-$basic-white: #FFFFFF;
-$basic-white10: rgba(255, 255, 255, 0.1);
-$basic-white15: rgba(255, 255, 255, 0.15);
-$basic-white30: rgba(255, 255, 255, 0.3);
+$gray-header: #495263;
 
-$main-gray: #283645;
-$main-gray10: rgba(40, 54, 69, 0.1);
-$main-gray30: rgba(40, 54, 69, 0.3);
-$main-gray50: rgba(40, 54, 69, 0.5);
-$main-gray60: rgba(40, 54, 69, 0.6);
+$white: #FFFFFF;
 
-$pink: #D22856;
-$pink30: rgba(210, 40, 86, 0.3);
-
-$gray-light: #F2F2F2;
-$gray-table-border: #E5E5E5;
-
-$green: #2AAB6D;
-$green-darker: #1C9B5E;
+$purple-light: #EBDDFD;
+$purple: #864BD8;
+$purple-dark: #6639a5;
 
 $shadow15: rgba(255, 255, 255, 0.15);
 $shadow-form-error: rgba(0, 1, 1, 0.15);
 
 //Viewports
 
-$tablet-width: 660px;
-$tablet-width-only: 1199px;
-$desktop-width: 1200px;
-$mobile-width-only: 659px;
+$desktop-width: 1040px;
+
+// ЛИТАНИЯ СЛУЖЕНИЯ
+// Дай мне сил исполнить свой долг и истреби тех, кто ищет, как помешать мне.
+
+$pink1: #D22856;
+$pink2: #E91E63;
+$pink3: #F06292;
+$pink4: #F8BBD0;
+$pink5: #FFC1E3;
+$pink6: #FF80AB;
+$pink7: #FF4081;
+$pink8: #F50057;
+$pink9: #FF5C93;
+$pink10: #FF85B3;
+$pink11: #FF9FB7;
+$pink12: #FFCDCD;
+$pink13: #FFC4D6;
+$pink14: #FFA1BF;
+$pink15: #F48FB1;
+$pink16: #F48FBF;
+$pink17: #E75585;
+$pink18: #E91A7D;
+$pink19: #D81B60;
+$pink20: #C2185B;
+$pink21: #FFEBEE;
+$pink22: #FFCDD2;
+$pink23: #EF9A9A;
+$pink24: #E57373;
+$pink25: #EF5350;
+$pink26: #F44336;
+$pink27: #E53935;
+$pink28: #D32F2F;
+$pink29: #C62828;
+$pink30: #B71C1C;
+$pink31: #FF8A80;
+$pink32: #FF5252;
+$pink33: #FF1744;
+$pink34: #D50000;
+$pink35: #FF1744;
+$pink36: #FF6F61;
+$pink37: #FF6978;
+$pink38: #F472B6;
+$pink39: #FF8BA7;
+$pink40: #FF5A77;
+$pink41: #FF4B85;
+$pink42: #FF007F;
+$pink43: #F984EF;
+$pink44: #FFC0CB;
+$pink45: #FFD1DC;
+$pink46: #FF69B4;
+$pink47: #FF6EB4;
+$pink48: #FF77D9;
+$pink49: #FF55A5;
+$pink50: #FFA6C9;
+$pink51: #F472D0;
+$pink52: #FA58AC;
+$pink53: #E77471;
+$pink54: #FF69B4;
+$pink55: #FF1493;
+$pink56: #C71585;
+$pink57: #F08080;
+$pink58: #E75480;
+$pink59: #FF33AA;
+$pink60: #FF66CC;
+$pink61: #FF99FF;
+$pink62: #FE6F5E;
+$pink63: #FF85CF;
+$pink64: #FF89C6;
+$pink65: #FF0080;
+$pink66: #FFB7DD;
+$pink67: #FF6FFF;
+$pink68: #FD6C9E;
+$pink69: #FF85B3;
+$pink70: #FD3A4A;
+$pink71: #FF8AB8;
+$pink72: #F26B9D;
+$pink73: #EE99A0;
+$pink74: #FF87A4;
+$pink75: #F94E8D;
+$pink76: #EC407A;
+$pink77: #F06292;
+$pink78: #D81B60;
+$pink79: #C2185B;
+$pink80: #AD1457;
+$pink81: #880E4F;
+$pink82: #FCE4EC;
+$pink83: #F8BBD0;
+$pink84: #F48FB1;
+$pink85: #F06292;
+$pink86: #EC407A;
+$pink87: #E91E63;
+$pink88: #D81B60;
+$pink89: #C2185B;
+$pink90: #AD1457;
+$pink91: #880E4F;
+$pink92: #FFEBEE;
+$pink93: #FFCDD2;
+$pink94: #EF9A9A;
+$pink95: #E57373;
+$pink96: #EF5350;
+$pink97: #F44336;
+$pink98: #E53935;
+$pink99: #D32F2F;
+$pink100: #C62828;
