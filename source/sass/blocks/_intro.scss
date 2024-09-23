@@ -2,9 +2,11 @@
   position: relative;
   padding-bottom: 425px;
   overflow: hidden;
+  margin-bottom: 10px;
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    margin-bottom: 64px;
   }
 
   &::after {
