@@ -1,0 +1,110 @@
+.speaker {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row-reverse;
+    margin: 0 10.1%; // 147px
+    background-color: #864BD8;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 94px;
+      height: 158px;
+      background-image: url("../img/speaker-desktop-2.svg");
+      background-repeat: no-repeat;
+      left: -50px;
+      top: -30px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 174px;
+    height: 142px;
+    background-image: url("../img/speaker-mobile.svg");
+    background-repeat: no-repeat;
+    right: 0;
+    top: -22px;
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/speaker-desktop.svg");
+      width: 328px;
+      height: 120px;
+      right: -86px;
+      top: -20px;
+    }
+  }
+
+  &__wrapper {
+    background-color: $purple;
+    color: $white;
+    padding: 78px 56px 78px 63px;
+
+    @media (min-width: $desktop-width) {
+      padding: 62px 14.1% 62px 10.5%; // 62px 158px 62px 120px
+    }
+  }
+
+  &__title {
+    line-height: 39px;
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    font-size: 18px;
+    letter-spacing: -0.4px;
+    line-height: 26px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 25px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 36px;
+
+      @media (min-width: $desktop-width) {
+        margin-bottom: 44px;
+      }
+    }
+    & span {
+      font-weight: 600;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    background-color: $orange;
+    padding: 20px 63px 20px 30px;
+    border-radius: 34px;
+    font-size: 14px;
+    font-weight: 600;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/right-arrow.svg");
+      right: 28px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    @media (min-width: $desktop-width) {
+      width: auto;
+    }
+  }
+}
+
+
+
+
+
+

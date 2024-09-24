@@ -1,7 +1,13 @@
 .request {
+  margin-bottom: 30px;
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
+  }
+  
   &__title {
     margin-bottom: 30px;
+    text-align: center;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 40px;
