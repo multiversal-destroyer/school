@@ -1,0 +1,115 @@
+.purchase {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/purchase.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 78px 19px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 142px 0 128px;
+    border-radius: 24px;
+    min-height: 380px;
+    margin-bottom: 65px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/purchase-decor-1.svg");
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    right: 40px;
+    top: 40px;
+
+    @media (min-width: $desktop-width) {
+      background-size: cover;
+      width: 56px;
+      height: 40px;
+      right: 102px;
+      top: 172px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/purchase-decor-2.svg");
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 46px;
+    bottom: 52px;
+
+    @media (min-width: $desktop-width) {
+      background-size: cover;
+      background-image: url("../img/purchase-decor-2-desktop.svg");
+      width: 62px;
+      height: 62px;
+      bottom: 140px;
+      left: 100px;
+    }
+  }
+
+  &__title {
+    font-family: "Montserrat";
+    font-size: 40px;
+    line-height: 42px;
+    color: $white;
+    text-align: center;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 50px;
+      line-height: 60px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__text {
+    font-family: "Poppins";
+    font-weight: 600;
+    line-height: 24px;
+    color: $purple-fan;
+    text-align: center;
+    letter-spacing: 4.6px;
+    margin-bottom: 24px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    background-color: $yellow;
+    color: $white;
+    padding: 20px 63px 20px 30px;
+    border-radius: 34px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 auto;
+    transition: 0.1s ease-in;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/right-arrow.svg");
+      right: 28px;
+    }
+
+    &:hover {
+      background-color: $yellow-dark;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
