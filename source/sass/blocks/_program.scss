@@ -1,0 +1,117 @@
+.program {
+  position: relative;
+  padding: 9px 19px 43px 19px;
+  overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 195px 43px 195px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/program-decor-1.png");
+    width: 70px;
+    height: 66px;
+    left: -28px;
+    top: -2px;
+
+    @media (min-width: $desktop-width) {
+      left: 66px;
+      top: 160px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/program-decor-2.png");
+    width: 82px;
+    height: 85px;
+    bottom: 66px;
+    right: -14px;
+
+    @media (min-width: $desktop-width) {
+      width: 82px;
+      height: 85px;
+      bottom: 192px;
+      right: 82px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 27px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    counter-reset: section;
+    list-style-type: none;
+    row-gap: 9px;
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 14px;
+      row-gap: 11px;
+    }
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    padding: 21px 28px 22px 21px;
+    border: 1px solid $gray-light;
+    border-radius: 11px;
+    column-gap: 24px;
+    min-height: 145px;
+    align-content: center;
+    row-gap: 10px;
+    justify-content: start;
+
+    &::before {
+      grid-row: 1 / -1;
+      counter-increment: section;
+      content: counters(section, ".") " ";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      line-height: 19px;
+      font-weight: 700;
+      color: $purple;
+      width: 64px;
+      height: 64px;
+      background-color: $purple-light;
+      border-radius: 50%;
+    } /* ГЕНИАЛЬНАЯ разработка ГЕНИАЛЬНЕЙШЕГО ГЕНИЯ всех времен. Мне за эту находку такую премию дадут.
+    Вы не знаете на кого нарвались. */
+    &:last-of-type::before {
+      counter-increment: none;
+      content: none;
+    }
+  }
+
+  &__item-image {
+    grid-row: 1 / -1;
+  }
+
+  &__item-title {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+    font-weight: 600;
+  }
+
+  &__item-text {
+    line-height: 19px;
+    color: $gray;
+  }
+}
