@@ -8,7 +8,7 @@
     margin: 0 10.1%; // 147px
     background-color: #864BD8;
     margin-bottom: 60px;
-    
+
     &::after {
       position: absolute;
       content: "";
@@ -84,6 +84,7 @@
     border-radius: 34px;
     font-size: 14px;
     font-weight: 600;
+    transition: 0.1s ease-in;
 
     &::after {
       position: absolute;
@@ -92,6 +93,14 @@
       height: 16px;
       background-image: url("../img/right-arrow.svg");
       right: 28px;
+    }
+
+    &:hover {
+      background-color: $orange-dark;
+    }
+
+    &:active {
+      opacity: 0.5;
     }
   }
 

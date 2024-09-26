@@ -1,0 +1,94 @@
+.result {
+padding: 24px 23px 15px 23px;
+
+@media (min-width: $desktop-width) {
+  margin: 0 142px;
+  padding: 55px 23px 67px 23px;
+
+}
+
+  &__title {
+    text-align: center;
+    margin-bottom: 6px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 26px;
+    color: $gray;
+    text-align: center;
+    margin: 0 10px 24px 10px;
+
+    @media (min-width: $desktop-width) {
+      margin: 0 10px 58px 10px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      align-items: normal;
+      justify-content: center;
+      row-gap: 9px;
+      column-gap: 7px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    border: 1px solid $gray-light;
+    border-radius: 100px;
+    padding: 5px 20px 5px 6px;
+  }
+
+  &__item-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    background-color: $purple;
+    color: $white;
+    padding: 20px 63px 20px 30px;
+    border-radius: 34px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 24px auto 0 auto;
+    transition: 0.1s ease-in;
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 0 10px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/right-arrow.svg");
+      right: 28px;
+    }
+
+    &:hover {
+      background-color: $purple-dark;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
