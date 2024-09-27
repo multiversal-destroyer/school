@@ -15,6 +15,7 @@
     height: 66px;
     left: -28px;
     top: -2px;
+    animation: moveUpDown 8s ease-in-out infinite;
 
     @media (min-width: $desktop-width) {
       left: 66px;
@@ -30,6 +31,7 @@
     height: 85px;
     bottom: 66px;
     right: -14px;
+    animation: moveUpDown 8s ease-in-out infinite;
 
     @media (min-width: $desktop-width) {
       width: 82px;
