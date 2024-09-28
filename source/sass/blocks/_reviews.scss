@@ -1,0 +1,125 @@
+.reviews {
+  overflow: hidden;
+  padding: 26px 0 25px 0;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 22px;
+  }
+
+  &__slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    position: relative;
+    min-height: 225px;
+    margin-bottom: 18px;
+
+    @media (min-width: $desktop-width) {
+      min-height: 438px;
+    }
+  }
+
+  &__image {
+    background-size: cover;
+  }
+
+  &__item {
+    position: absolute;
+    flex: 0 0 20%;
+    opacity: 0.5;
+    filter: blur(3px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: scale(0.7);
+    z-index: 1;
+
+    & img {
+      width: 326px;
+
+      @media (min-width: $desktop-width) {
+        width: 576px;
+      }
+    }
+
+    &.reviews__item--active:not(:nth-of-type(4)) {
+      flex: 0 0 40%;
+      opacity: 1;
+      filter: blur(0);
+      transform: scale(1) translateX(-50%);
+      right: auto;
+      left: 50%;
+      z-index: 2;
+    }
+
+    &:first-of-type {
+      left: -104px;
+      top: -10px;
+
+      @media (min-width: $desktop-width) {
+        left: 104px;
+      }
+
+      & img {
+        width: 274px;
+
+        @media (min-width: $desktop-width) {
+          width: 500px;
+        }
+      }
+    }
+
+    &:last-of-type {
+      right: -174px;
+      top: 32px;
+
+      @media (min-width: $desktop-width) {
+        right: 86px;
+        top: 65px;
+      }
+
+      & img {
+        width: 417px;
+
+        @media (min-width: $desktop-width) {
+          width: 700px;
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+  }
+
+  &__button {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:active {
+      opacity: 0.4;
+    }
+
+    &--next {
+      background-color: $orange;
+      background-image: url("../img/arrow-r.svg");
+
+      &:hover {
+        background-color: $orange-dark;
+      }
+    }
+
+    &--prev {
+      border: 1px solid #EDEEEF;
+      background-color: $white;
+      background-image: url("../img/arrow-l.svg");
+
+      &:hover {
+        background-color: $gray-light;
+      }
+    }
+  }
+}
