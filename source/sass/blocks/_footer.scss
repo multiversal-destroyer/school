@@ -1,0 +1,102 @@
+.footer {
+  background-color: $dark-footer;
+  color: $gray-footer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 44px 12px 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 170px 63px 190px;
+  }
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column-reverse;
+  min-width: 144px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 14px;
+    margin-bottom: 18px;
+  }
+
+  &__item {
+    width: 32px;
+    height: 32px;
+    background-color: $white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s ease;
+
+    & a {
+      width: inherit;
+    }
+
+    & svg {
+      fill: $black;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:active {
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    }
+  }
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+
+  &__mail,
+  &__phone {
+    text-decoration-line: underline;
+    font-family: "Poppins";
+    font-weight: 500;
+    letter-spacing: -0.1px;
+  }
+}
+
+.footer-social__item--twitter {
+  &:hover {
+    background-color: rgb(0, 200, 255);
+
+    & svg {
+      fill: $white;
+    }
+  }
+}
+
+.footer-social__item--facebook {
+  &:hover {
+    background-color: rgb(2, 105, 240);
+
+    & svg {
+      fill: $white;
+    }
+  }
+}
+
+.footer-social__item--linkedin {
+  &:hover {
+    background-color: rgb(41, 134, 255);
+
+    & svg {
+      fill: $white;
+    }
+  }
+}
